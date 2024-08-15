@@ -1,4 +1,4 @@
-package day4;
+package StudentMarksManagmentSystem;
 
 import java.util.Arrays;
 
