@@ -1,6 +1,8 @@
 package Model;
 
 public class Vehicle {
+    public static final int MaxVehicleCount = 1000;
+    private int id;
     private String brand;
     private String model;
     private static int Count;
@@ -9,6 +11,7 @@ public class Vehicle {
         this.brand = brand;
         this.model = model;
         Count++;
+        this.id = Count;
     }
 
     public Vehicle(Vehicle vehicle) {
@@ -34,5 +37,11 @@ public class Vehicle {
     }
     public static int getCount() {
         return Count;
+    }
+    private void setId(int id) {
+        this.id = id;
+    }
+    public int getId() {
+        return id;
     }
 }
